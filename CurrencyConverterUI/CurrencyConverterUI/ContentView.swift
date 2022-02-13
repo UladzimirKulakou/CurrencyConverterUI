@@ -55,7 +55,7 @@ struct ContentView: View {
                 Section(header: Text("Convert a currency")) {
                     TextField("\(convert(amount2)) ", text: $amount).keyboardType(.decimalPad)
                     
-                    HStack {
+                    HStack (alignment: .bottom, spacing: 40) {
                         Label("From", systemImage: "")
                         Picker(selection: $itemSelected,  label: Text(flags[itemSelected])) {
                             ForEach(0 ..< currencies.count) {index in
@@ -65,15 +65,15 @@ struct ContentView: View {
                         }
                     }.padding()
                     
-                    HStack{
-                        Label("To", systemImage: "")
+                    HStack(alignment: .bottom, spacing: 40) {
+                        Label("To     ", systemImage: "")
                         Picker(selection: $itemSelected2,  label: Text(flags[itemSelected2])) {
                             ForEach(0 ..< currencies.count) {index in
                                 Text(self.currencies[index]).tag(index)
                                 
                             }
                         }
-                    }
+                    }.padding()
                     
                     TextField("\(convert(amount)) ", text: $amount2).keyboardType(.decimalPad)
                     
