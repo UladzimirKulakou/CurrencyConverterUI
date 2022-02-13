@@ -78,12 +78,9 @@ struct ContentView: View {
                     TextField("\(convert(amount)) ", text: $amount2).keyboardType(.decimalPad)
                     
                 }
-//                Section(header: Text("Conversion")) {
-//                    Text("\(convert(amount)) \(currencies[itemSelected2])")
-//                }
-                
-            }
-        }.navigationTitle("Convertor")
+//
+            }.navigationTitle("Converter")
+        }
     }
 }
 
