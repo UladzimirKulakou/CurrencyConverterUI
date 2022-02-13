@@ -1,7 +1,7 @@
 # CurrencyConverterUI
 
-● It is simple application created with SwiftUI
-● Dark Mode realised
+● It is simple application created with SwiftUI  
+● Dark Mode 
 ● Landscape mode realised
 
 
